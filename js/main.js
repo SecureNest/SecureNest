@@ -70,34 +70,35 @@
         $('.slider__progress span').css("width", presentage + "%");
     });
 
-    /*--------------------------
-        Project Slider
-    ----------------------------*/
-    $(".project__slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 4,
-        dots: false,
-        nav: true,
-        navText: ["<span class='arrow_carrot-left'><span/>", "<span class='arrow_carrot-right'><span/>"],
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: false,
-        responsive: {
-            320: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            },
-            1200: {
-                items: 4
-            }
+/*--------------------------
+    Project Slider
+----------------------------*/
+$(".project__slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 4,
+    dots: false,
+    nav: false, // Set this to false as you've removed the navigation buttons
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+    autoplayTimeout: 2000, // Set autoplay delay to 2 seconds
+    responsive: {
+        320: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 3
+        },
+        1200: {
+            items: 4
         }
-    });
+    }
+});
+
 
     /*-----------------------------
         Testimonial Slider
@@ -178,5 +179,97 @@
             }
         });
     });
+
+
+    $(document).ready(function() {
+        var getProductHeight = $('.product.active').height();
+      
+        $('.products').css({
+          height: getProductHeight
+        });
+      
+        function calcProductHeight() {
+          getProductHeight = $('.product.active').height();
+      
+          $('.products').css({
+            height: getProductHeight
+          });
+        }
+      
+        function animateContentColor() {
+          var getProductColor = $('.product.active').attr('product-color');
+      
+          $('body').css({
+            background: getProductColor
+          });
+      
+          $('.title').css({
+            color: getProductColor
+          });
+      
+          $('.btn').css({
+            color: getProductColor
+          });
+        }
+      
+        var productItem = $('.product'),
+          productCurrentItem = productItem.filter('.active');
+      
+        $('#next').on('click', function(e) {
+          e.preventDefault();
+      
+          var nextItem = productCurrentItem.next();
+      
+          productCurrentItem.removeClass('active');
+      
+          if (nextItem.length) {
+      
+            productCurrentItem = nextItem.addClass('active');
+          } else {
+            productCurrentItem = productItem.first().addClass('active');
+          }
+      
+          calcProductHeight();
+          animateContentColor();
+        });
+      
+        $('#prev').on('click', function(e) {
+          e.preventDefault();
+      
+          var prevItem = productCurrentItem.prev();
+      
+          productCurrentItem.removeClass('active');
+      
+          if (prevItem.length) {
+            productCurrentItem = prevItem.addClass('active');
+          } else {
+            productCurrentItem = productItem.last().addClass('active');
+          }
+      
+          calcProductHeight();
+          animateContentColor();
+        });
+      
+        // Ripple
+        $('[ripple]').on('click', function(e) {
+          var rippleDiv = $('<div class="ripple" />'),
+            rippleSize = 60,
+            rippleOffset = $(this).offset(),
+            rippleY = e.pageY - rippleOffset.top,
+            rippleX = e.pageX - rippleOffset.left,
+            ripple = $('.ripple');
+      
+          rippleDiv.css({
+            top: rippleY - (rippleSize / 2),
+            left: rippleX - (rippleSize / 2),
+            background: $(this).attr("ripple-color")
+          }).appendTo($(this));
+      
+          window.setTimeout(function() {
+            rippleDiv.remove();
+          }, 1900);
+        });
+      });
+
 
 })(jQuery);

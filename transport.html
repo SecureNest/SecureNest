@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Secure Nest Security Services">
+    <meta name="keywords" content="Security Services, UK, United Kingdom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secure Nest</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding: 50px 10%;
+            gap: 30px;
+        }
+
+        .selection-menu {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .selection-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .selection-menu li {
+            margin-bottom: 15px;
+        }
+
+        .selection-menu a {
+            text-decoration: none;
+            color: #555;
+            padding: 15px 20px;
+            display: block;
+            border-left: 4px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .selection-menu a:hover,
+        .selection-menu a.active {
+            color: #56ABD1;
+            background-color: #e5e5e5;
+            border-left: 4px solid #56ABD1;
+        }
+
+        .content-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-description {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* For medium-sized devices */
+        @media only screen and (max-width: 992px) {
+            .content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .selection-menu,
+            .content-section {
+                width: 100%;
+            }
+
+            .img-container img {
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+
+        /* For small devices */
+        @media only screen and (max-width: 576px) {
+            .content {
+                padding: 30px 5%;
+            }
+
+            .selection-menu {
+                min-width: unset;
+            }
+
+            .selection-menu a {
+                padding: 10px 15px;
+            }
+
+            .content-description {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/s_logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <!-- Added the icons here -->
+            <div class="offcanvas__icons">
+                <a href="tel:+447717682880" class="icon-link">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://wa.me/447717682880" class="icon-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:securenestuk@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="#"><img height="47px" width="152px" src="img/s_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li class="active"><a href="./services.html">Our Services</a>
+                                <ul class="dropdown">
+                                    <li><a href="./manned.html">Manned Guarding</a></li>
+                                    <li><a href="./patrol.html">Mobile Patrol</a></li>
+                                    <li><a href="./transport.html">Transport Security</a></li>
+                                    <li><a href="./port.html">Port Securtiy</a></li>
+                                    <li><a href="./event.html">Event Security</a></li>
+                                    <li><a href="./dog.html">Dog Handling</a></li>
+                                    <li><a href="./key.html">Key Holding</a></li>
+                                    <li><a href="./cctv.html">CCTV & Alarm Response</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./teams.html">Our Team</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <!-- <li><a href="./blog.html">Our Clients</a></li>
+                            <li><a href="./contact.html">Contact</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__widget">
+                        <a href="tel:+447717682880" class="icon-link">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="https://wa.me/447717682880" class="icon-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:securenestuk@gmail.com" class="icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                               
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/hero/s_hero_10.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Mobile Patrol</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <nav class="selection-menu">
+            <ul>
+                <li><a href="./manned.html">Manned Guarding & Close Protection Services</a></li>
+                <li><a href="./patrol.html">Mobile Patrol</a></li>
+                <li><a class="active" href="./transport.html">Transport Security</a></li>
+                <li><a href="./port.html">Port Security</a></li>
+                <li><a href="./event.html">Event Security</a></li>
+                <li><a href="dog.html">Dog Handling</a></li>
+                <li><a href="key.html">Key Holding</a></li>
+                <li><a href="./cctv.html">CCTV & Alarm Response</a></li>
+                <!-- Add more links as necessary -->
+            </ul>
+        </nav>
+        
+        <section class="content-section">
+            <div class="img-container">
+                <img src="img/new/services/transport.jpg" alt="Service Image">
+            </div>
+            <p class="content-description">
+                <span>
+                    <a style="color: #56ABD1;" class="arrow_right_alt">
+                    </a>
+                </span>An ever-increasing footfall on our public transport systems creates more significant challenges. We can supply a fully trained and professional workforce to complement our client’s needs and expectations to keep the public safe. Our Management Team has expertise in providing personnel to the Transport Industry, whether for Revenue Protection, Route Crime Reduction, Travel Safe Officers or Customer Service professionals, with particular emphasis and training in the safety of vulnerable persons. 
+
+                Ensuring the right individuals are provided to businesses to protect people and assets from the ongoing threat to the public from terror and crime is part of what we do.</p>
+        </section>
+    </div>
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/new/footer.jpg">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="footer__top__text">
+                            <h2>Let us Protect You!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer__top__newslatter">
+                            <div class="latest__btn">
+                                <a href="./contact.html" class="primary-btn normal-btn" style="color: white; font-size: 18px;">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="img/s_logo.png" alt=""></a>
+                        </div>
+                        <p style="color: white;"><a class="f-link-a" href="https://www.google.com/maps/dir//Baden+Rd+Leicester+LE5+5PA+UK/@52.624566,-1.0971075,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4877615ac12ba3e3:0x1c30917b39dfaa45"><i class="fas fa-map"></i> 716B, Baden Road, <br /> LE5, 5PA, Leicester</i></p></a>
+                        <ul>
+                            <li class="footer_mail" style="color: white;"><a class="f-link-a" href="mailto:securenestuk@gmail.com"><i class="fas fa-envelope"></i> securenestuk@gmail.com</li></a>
+                            <li style="color: white;"><a class="f-link-a" href="tel:+447717682880"><i class="fas fa-phone"></i> +447717682880</li></a>
+                        </ul>
+                        <div class="footer__social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Services</h6>
+                        <ul>
+                            <li><a class="f-link-a" style="color: white;" href="./manned.html">Manned Guarding</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./patrol.html">Mobile Patrol</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./transport.html">Transport Securtiy</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./services.html">See All...</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="footer__address">
+                        <h6 >Why Choose Us?</h6>
+                        <ul>
+                            <li><a class="f-link-a" style="color: white;" href="./about.html">Our Vision</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./about.html">Our Mission</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    
+                <div class="footer__widget">
+                    <h6>Working Hours</h6>
+                    <ul>
+                        <li><p style="color: white;">24 Hours</p></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="copyright__text">
+                            <p style="color: white;" class="text-center">Copyright © <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | Secure Nest Security Services</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

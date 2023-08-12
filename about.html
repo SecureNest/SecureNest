@@ -14,6 +14,14 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -30,59 +38,83 @@
         <div class="loader"></div>
     </div>
 
-<!-- Offcanvas Menu Begin -->
-<div class="offcanvas-menu-overlay"></div>
-<div class="offcanvas-menu-wrapper">
-    <div class="offcanvas__logo">
-        <a href="#"><img src="img/s_logo.png" alt=""></a>
-    </div>
-    <div id="mobile-menu-wrap"></div>
-    <div class="offcanvas__widget">
-        <span>Call us to Book Any Service</span>
-        <h4>+44 7470 561483</h4>
-    </div>
-</div>
-<!-- Offcanvas Menu End -->
-
-<!-- Header Section Begin -->
-<header class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-                    <a href="#"><img height="47px" width="152px" src="img/s_logo.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <nav class="header__menu mobile-menu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li class="active"><a href="./about.html">About Us</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <!-- <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="./Project-details.html">Project Details</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li> -->
-                        <!-- <li><a href="./blog.html">Our Clients</a></li>
-                        <li><a href="./contact.html">Contact</a></li> -->
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-lg-3">
-                <div class="header__widget">
-                    <span>Call us to Book Any Service</span>
-                    <h4 style="color: #56ABD1;">+44 7470 561483</h4>
-                </div>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/s_logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <!-- Added the icons here -->
+            <div class="offcanvas__icons">
+                <a href="tel:+447717682880" class="icon-link">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://wa.me/447717682880" class="icon-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:securenestuk@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
-        <div class="canvas__open"><i class="fa fa-bars"></i></div>
     </div>
-</header>
-<!-- Header Section End -->
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="#"><img height="47px" width="152px" src="img/s_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="./about.html">About Us</a></li>
+                            <li><a href="./services.html">Our Services</a>
+                                <ul class="dropdown">
+                                    <li><a href="./manned.html">Manned Guarding</a></li>
+                                    <li><a href="./patrol.html">Mobile Patrol</a></li>
+                                    <li><a href="./transport.html">Transport Security</a></li>
+                                    <li><a href="./port.html">Port Securtiy</a></li>
+                                    <li><a href="./event.html">Event Security</a></li>
+                                    <li><a href="./dog.html">Dog Handling</a></li>
+                                    <li><a href="./key.html">Key Holding</a></li>
+                                    <li><a href="./cctv.html">CCTV & Alarm Response</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./teams.html">Our Team</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <!-- <li><a href="./blog.html">Our Clients</a></li>
+                            <li><a href="./contact.html">Contact</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__widget">
+                        <a href="tel:+447717682880" class="icon-link">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="https://wa.me/447717682880" class="icon-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:securenestuk@gmail.com" class="icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                               
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
 
 
     <!-- Breadcrumb Section Begin -->
@@ -163,7 +195,7 @@
                     <div class="callto__text">
                         <span style="color: #56ABD1;">Why choose us?</span>
                         <h2>Our ability to bring outstanding results to our clients.</h2>
-                        <a href="#" class="primary-btn" style="background-color: #56ABD1;">Contact Us</a>
+                        <a href="./contact.html" class="primary-btn" style="background-color: #56ABD1;">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -171,69 +203,15 @@
     </section>
     <!-- Call To Action Section End -->
 
-    <!-- Team Section Begin -->
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="section-title" style="display: flex; flex-direction: column; justify-content: center;
-                    align-items: center;">
-                        <span style="color: #56ABD1;">Our Team</span>
-                        <h2>Meet our team</h2>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn normal-btn">View All</a>
-                    </div>
-                </div> -->
-            </div>
-            <div class="row" style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="img/team/CEO.jpeg">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Muhammad Awais-Ur-Rehman</h5>
-                                <span style="color: #56ABD1;">CEO</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Omnis, voluptate minus fugiat porro facilis quibusdam a 
-                                debitis magni, atque voluptas molestiae optio, neque 
-                                numquam excepturi nesciunt ex soluta animi non.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team__item set-bg" data-setbg="img/team/Director.jpeg">
-                        <div class="team__text">
-                            <div class="team__title">
-                                <h5>Muhammad Ahmed</h5>
-                                <span style="color: #56ABD1;">Director</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Omnis, voluptate minus fugiat porro facilis quibusdam a 
-                                debitis magni, atque voluptas molestiae optio, neque 
-                                numquam excepturi nesciunt ex soluta animi non.</p>
-                            <div class="team__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Footer Section Begin -->
-    <footer class="footer set-bg" data-setbg="img/hero/s_hero_10.jpg">
+    <footer class="footer set-bg" data-setbg="img/new/footer.jpg">
         <div class="container">
             <div class="footer__top">
                 <div class="row">
@@ -245,7 +223,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
                             <div class="latest__btn">
-                                <a href="#" class="primary-btn normal-btn" style="color: white; font-size: 18px;">Contact Us</a>
+                                <a href="./contact.html" class="primary-btn normal-btn" style="color: white; font-size: 18px;">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -257,51 +235,50 @@
                         <div class="footer__logo">
                             <a href="#"><img src="img/s_logo.png" alt=""></a>
                         </div>
-                        <p style="color: white;">716B, Baden Road, <br /> LE5, 5PA, Leicester</p>
+                        <p style="color: white;"><a class="f-link-a" href="https://www.google.com/maps/dir//Baden+Rd+Leicester+LE5+5PA+UK/@52.624566,-1.0971075,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4877615ac12ba3e3:0x1c30917b39dfaa45"><i class="fas fa-map"></i> 716B, Baden Road, <br /> LE5, 5PA, Leicester</i></p></a>
                         <ul>
-                            <li style="color: white;">securenestuk@gmail.com</li>
-                            <li style="color: white;">+44 7470 561483</li>
+                            <li class="footer_mail" style="color: white;"><a class="f-link-a" href="mailto:securenestuk@gmail.com"><i class="fas fa-envelope"></i> securenestuk@gmail.com</li></a>
+                            <li style="color: white;"><a class="f-link-a" href="tel:+447717682880"><i class="fas fa-phone"></i> +447717682880</li></a>
                         </ul>
                         <div class="footer__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                     <div class="footer__widget">
-                        <h6>Hot Links</h6>
+                        <h6>Services</h6>
                         <ul>
-                            <li><a style="color: white;" href="#">About Us</a></li>
-                            <li><a style="color: white;" href="#">Our Services</a></li>
-                            <li><a style="color: white;" href="#">Contact</a></li>
-                            <!-- <li><a href="#">Career</a></li>
-                            <li><a href="#">FAQs</a></li> -->
+                            <li><a class="f-link-a" style="color: white;" href="./manned.html">Manned Guarding</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./patrol.html">Mobile Patrol</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./transport.html">Transport Securtiy</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./services.html">See All...</a></li>
                         </ul>
                     </div>
                 </div>
+
+
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Services</h6>
+
+                    <div class="footer__address">
+                        <h6 >Why Choose Us?</h6>
                         <ul>
-                            <li><a style="color: white;" href="#">Mobile Patrol</a></li>
-                            <li><a style="color: white;" href="#">Event Security</a></li>
-                            <li><a style="color: white;" href="#">Dog Handling</a></li>
-                            <li><a style="color: white;" href="#">See All...</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./about.html">Our Vision</a></li>
+                            <li><a class="f-link-a" style="color: white;" href="./about.html">Our Mission</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
-                        <h6 >Get In Touch</h6>
-                        <p style="color: white;">716B, Baden Road, <br /> LE5, 5PA, Leicester</p>
-                        <ul>
-                            <li style="color: white;">securenestuk@gmail.com</li>
-                            <li style="color: white;">+44 7470 561483</li>
-                        </ul>
-                    </div>
+                    
+                <div class="footer__widget">
+                    <h6>Working Hours</h6>
+                    <ul>
+                        <li><p style="color: white;">24 Hours</p></li>
+                    </ul>
+                </div>
                 </div>
             </div>
             <div class="copyright">
@@ -314,12 +291,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-5">
-                    <div class="copyright__widget">
-                        <a href="#">Terms of use</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

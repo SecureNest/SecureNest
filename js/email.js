@@ -1,3 +1,19 @@
+    // Initialize intlTelInput
+    var phoneInput = document.querySelector("#ph_no");
+    var iti = window.intlTelInput(phoneInput, {
+        // Any initial options you want, refer to documentation
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // just for formatting/placeholders etc
+    });
+
+    // Store the full number whenever there's an input
+    phoneInput.addEventListener("countrychange", function() {
+        document.getElementById("full_ph_no").value = iti.getNumber();
+    });
+    phoneInput.addEventListener("keyup", function() {
+        document.getElementById("full_ph_no").value = iti.getNumber();
+    });
+
+
 function SendMail()
 {
     var email = document.getElementById("email_id").value;
@@ -5,6 +21,7 @@ function SendMail()
         from_name : document.getElementById("full_name").value,
         email_id : email,
         message : document.getElementById("message").value,
+        ph_no : document.getElementById("full_ph_no").value,
     }
         // Regular expression for email validation
         var emailRegEx = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
@@ -35,4 +52,5 @@ function SendMail()
             });
         });
     }
+    console.log("Phone number is: " + params.ph_no)
 }
