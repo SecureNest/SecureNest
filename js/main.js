@@ -79,10 +79,11 @@ $(".project__slider").owlCarousel({
     items: 4,
     dots: false,
     nav: false, // Set this to false as you've removed the navigation buttons
-    smartSpeed: 1200,
+    smartSpeed: 1500,
     autoHeight: false,
     autoplay: true,
-    autoplayTimeout: 2000, // Set autoplay delay to 2 seconds
+    autoplayTimeout: 4000, // Set autoplay delay to 2 seconds
+    
     responsive: {
         320: {
             items: 1

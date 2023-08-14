@@ -32,111 +32,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            padding: 50px 10%;
-            gap: 30px;
-        }
-
-        .selection-menu {
-            flex: 1;
-            min-width: 200px;
-            background-color: #f8f8f8;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .selection-menu ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .selection-menu li {
-            margin-bottom: 15px;
-        }
-
-        .selection-menu a {
-            text-decoration: none;
-            color: #555;
-            padding: 15px 20px;
-            display: block;
-            border-left: 4px solid transparent;
-            transition: all 0.3s;
-        }
-
-        .selection-menu a:hover,
-        .selection-menu a.active {
-            color: #56ABD1;
-            background-color: #e5e5e5;
-            border-left: 4px solid #56ABD1;
-        }
-
-        .content-section {
-            flex: 2;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .img-container img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .content-description {
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 16px;
-            line-height: 1.5;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* For medium-sized devices */
-        @media only screen and (max-width: 992px) {
-            .content {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .selection-menu,
-            .content-section {
-                width: 100%;
-            }
-
-            .img-container img {
-                max-width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-            }
-        }
-
-        /* For small devices */
-        @media only screen and (max-width: 576px) {
-            .content {
-                padding: 30px 5%;
-            }
-
-            .selection-menu {
-                min-width: unset;
-            }
-
-            .selection-menu a {
-                padding: 10px 15px;
-            }
-
-            .content-description {
-                font-size: 14px;
-            }
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="css/services.css" type="text/css">
 
 </head>
 
@@ -254,7 +150,7 @@
         
         <section class="content-section">
             <div class="img-container">
-                <img src="img/new/services/dog.jpg" alt="Service Image">
+                <img src="img/new/services/dog.webp" alt="Service Image">
             </div>
             <p class="content-description">
                 <span>

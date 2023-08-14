@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/cards.css" type="text/css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -31,7 +32,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
 </head>
 
@@ -121,7 +121,7 @@
 
 
     <!-- Breadcrumb Section Begin -->
-    <div class="breadcrumb-option spad set-bg" data-setbg="img/hero/s_hero_10.jpg">
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/new/ft.webp">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -135,9 +135,12 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Services Section Begin -->
+
+
+
+
     <section class="services spad">
-        <div class="container" style="display: flex; flex-direction: row; flex-wrap: wrap; 
-            justify-content: center; align-items: center;">
+        <div class="container">
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <span style="color: #56ABD1;">Which services do we provide?</span>
@@ -145,68 +148,56 @@
                 </div>
             </div>
 
-            <!-- Cards here -->
-            <div class="card-container">
-                <a href="./manned.html">
-                    <div class="customCard">
-                        <div class="customCard__image-container">
-                            <img class="customCard__image" src="img/new/services/manned.jpg" alt="">
-                        </div>
-                
-                        <svg class="customCard__svg" viewBox="0 0 800 500">
-                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                            <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                        </svg>
-                
-                        <div class="customCard__content">
-                            <h1 class="customCard__title" style="color: #56ABD1;">Manned Guarding & Close Protection Services</h1>
-                            <p style="color: white; font-size: 13px;">Have peace of mind that your business, people, 
-                                and assets are safe and protected by professional, highly trained, experienced SIA-licensed 
-                                static security guards. We offer comprehensive security services for a variety of businesses 
-                                and industries, ranging from retail outlets to construction sites. Our teams of professional 
-                                security guards are trained to meet all your needs.
-                                We can provide security individuals for concierge, gatehouse duties, stop and search, waking watch, vehicle access control, uniformed deterrent, issuing of keys, site patrols and first aid trained staff.</p>
-                        </div>
-                    </div>
-                 </a>
 
-                <a href="./patrol.html">
-                    <div class="customCard">
-                        <div class="customCard__image-container">
-                            <img class="customCard__image" src="img/new/services/patrol-cover.jpg" alt="">
+            <!-- New Cards Here -->
+            
+            <div class="teamcards">
+
+                <!-- Manned Guarding -->
+                <a href="./manned.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/manned.webp" alt="Manned Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Manned Guarding & Close Protection Services</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>Have peace of mind that your business, people, 
+                            and assets are safe and protected by professional, highly trained, experienced SIA-licensed 
+                            static security guards. We offer comprehensive security services for a variety of businesses 
+                            and industries, ranging from retail outlets to construction sites. Our teams of professional 
+                            security guards are trained to meet all your needs.
+                            We can provide security individuals for concierge, gatehouse duties, stop and search, waking watch, vehicle access control, uniformed deterrent, issuing of keys, site patrols and first aid trained staff.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./manned.html"><h4>Read More</h4></a>
                         </div>
-                
-                        <svg class="customCard__svg" viewBox="0 0 800 500">
-                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                            <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                        </svg>
-                    
-                        <div class="customCard__content">
-                            <h1 class="customCard__title" style="color: #56ABD1;">Mobile Patrol</h1>
-                            <p style="color: white; font-size: 13px;">
-                                Our services can be tailored to your needs and include: Lock and unlock services, 
-                                perimeter checks, lone worker visits, set and unset alarm systems, fire safety and 
-                                temperature checks.  We also have the latest technology to provide proof of visits, 
-                                incidents, or other reporting services. 
-                            </p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
                 </a>
-                
-                <a href="./transport.html">
-                    <div class="customCard">
-                        <div class="customCard__image-container">
-                        <img class="customCard__image" src="img/new/services/transport.jpg" alt="">
+        
+                <!-- Mobile Patrol -->
+                <a href="./patrol.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/patrol.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Mobile Patrol</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>Our services can be tailored to your needs and include: Lock and unlock services, 
+                            perimeter checks, lone worker visits, set and unset alarm systems, fire safety and 
+                            temperature checks.  We also have the latest technology to provide proof of visits, 
+                            incidents, or other reporting services.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./patrol.html"><h4>Read More</h4></a>
                         </div>
-                    
-                        <svg class="customCard__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                        <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                        </svg>
-                    
-                        <div class="customCard__content">
-                        <h1 class="customCard__title" style="color: #56ABD1;">Transport Security</h1>
-                        <p style="color: white; font-size: 13px;">An ever-increasing footfall on our public 
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="./transport.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/transport.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Transport Security</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>An ever-increasing footfall on our public 
                             transport systems creates more significant challenges. We can supply a fully trained
                             and professional workforce to complement our client’s needs and expectations to keep
                             the public safe. Our Management Team has expertise in providing personnel to the Transport
@@ -216,103 +207,108 @@
 
                             Ensuring the right individuals are provided to businesses to protect people and assets 
                             from the ongoing threat to the public from terror and crime is part of what we do.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./transport.html"><h4>Read More</h4></a>
                         </div>
-                    </div>
+                        </figcaption>
+                    </figure>
                 </a>
-                  
+
                 <a href="./port.html">
-                  <div class="customCard">
-                    <div class="customCard__image-container">
-                      <img class="customCard__image" src="img/new/services/port-cover.png" alt="">
-                    </div>
-                
-                    <svg class="customCard__svg" viewBox="0 0 800 500">
-                      <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                      <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                    </svg>
-                
-                    <div class="customCard__content">
-                      <h1 class="customCard__title" style="color: #56ABD1;">Port Security</h1>
-                      <p style="color: white; font-size: 13px;">Securing port premises effectively is extremely important to ensure the safe transition of goods and the protection of British borders. Securi Serve has experienced staff also trained in the docking process, and where applicable, they are able to add value to our client’s own teams. Our management team are aware of the changes implemented following Brexit and their impact on UK ports and DfT protocols for international traffic and is fully able to support our customers in protecting their sites.  </p>
-                    </div>
-                  </div>
-                </a>  
+                    <figure class="teamuk">
+                        <img src="img/new/services/port.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Port Security</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p> Securing port premises effectively is extremely important to ensure
+                             the safe transition of goods and the protection of British borders.
+                              Securi Serve has experienced staff also trained in the docking process,
+                               and where applicable, they are able to add value to our client’s own teams.
+                                Our management team are aware of the changes implemented following Brexit
+                                 and their impact on UK ports and DfT protocols for international traffic
+                                  and is fully able to support our customers in protecting their sites.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./port.html"><h4>Read More</h4></a>
+                        </div>
+                        </figcaption>
+                    </figure>
+                </a>
 
                 <a href="./event.html">
-                    <div class="customCard">
-                      <div class="customCard__image-container">
-                        <img class="customCard__image" src="img/new/services/event-cover.jpg" alt="">
-                      </div>
-                  
-                      <svg class="customCard__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                        <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                      </svg>
-                  
-                      <div class="customCard__content">
-                        <h1 class="customCard__title" style="color: #56ABD1;">Event Security</h1>
-                        <p style="color: white; font-size: 13px;">From planning the security detail at the outset, our event team will be there right through to the end, ensuring your event is secure and successful throughout.
+                    <figure class="teamuk">
+                        <img src="img/new/services/event.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Event Security</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>From planning the security detail at the outset, 
+                            our event team will be there right through to the end,
+                             ensuring your event is secure and successful throughout.
 
-                            Securi Serve takes pride in providing the highest quality of bespoke event security services for shows and events. Our SIA licensed professionals are highly experienced and trained to suit all types of security needs. We ensure that your event is managed with safety as a priority, regardless of size or type. You can trust our team to ensure your event runs smoothly and securely. </p>
-                      </div>
-                    </div>
-                  </a>  
+                            Securi Serve takes pride in providing the highest quality
+                             of bespoke event security services for shows and events.
+                              Our SIA licensed professionals are highly experienced
+                               and trained to suit all types of security needs.
+                                We ensure that your event is managed with safety
+                                 as a priority, regardless of size or type. You 
+                                 can trust our team to ensure your event runs smoothly 
+                                 and securely. </p>
+                        <div class="icons">
+                            <a class="read_more" href="./event.html"><h4>Read More</h4></a>
+                        </div>
+                        </figcaption>
+                    </figure>
+                </a>
 
-                  <a href="./dog.html">
-                    <div class="customCard">
-                      <div class="customCard__image-container">
-                        <img class="customCard__image" src="img/new/services/dog-cover.jpg" alt="">
-                      </div>
-                  
-                      <svg class="customCard__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                        <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                      </svg>
-                  
-                      <div class="customCard__content">
-                        <h1 class="customCard__title" style="color: #56ABD1;">Dog Handling</h1>
-                        <p style="color: white; font-size: 13px;">For additional support and a robust deterrent to potential trespass, vandalism, and theft, we can provide NASDU-certified K9 dog units, both on-site permanently or via mobile patrols.  This service can be particularly helpful on construction sites where valuable machinery can be vulnerable to theft and to help protect vacant properties or support the eviction process.</p>
-                      </div>
-                    </div>
-                  </a>  
+                <a href="./dog.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/dog.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Dog Handling</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>For additional support and a robust deterrent to potential trespass, vandalism, and 
+                            theft, we can provide NASDU-certified K9 dog units, both on-site permanently or via 
+                            mobile patrols.  This service can be particularly helpful on construction sites where 
+                            valuable machinery can be vulnerable to theft and to help protect vacant properties or 
+                            support the eviction process.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./dog.html"><h4>Read More</h4></a>
+                        </div>
+                        </figcaption>
+                    </figure>
+                </a>
 
-                  <a href="./key.html">
-                    <div class="customCard">
-                      <div class="customCard__image-container">
-                        <img class="customCard__image" src="img/new/services/key-cover.jpg" alt="">
-                      </div>
-                  
-                      <svg class="customCard__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                        <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                      </svg>
-                  
-                      <div class="customCard__content">
-                        <h1 class="customCard__title" style="color: #56ABD1;">Key Holding</h1>
-                        <p style="color: white; font-size: 13px;">Our Alarm & Key Holding Service provides a stress-free solution so that you do not need to worry about responding to alarms outside of regular work hours. We will organise trained responders to attend your sites, access your premises where required and resolve any issues or escalate in those situations where further actions may be necessary.</p>
-                      </div>
-                    </div>
-                  </a>  
+                <a href="./key.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/key.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">Key Holding</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>Our Alarm & Key Holding Service provides a stress-free solution so that you do not need 
+                            to worry about responding to alarms outside of regular work hours. We will organise trained 
+                            responders to attend your sites, access your premises where required and resolve any issues 
+                            or escalate in those situations where further actions may be necessary.</p>
+                        <div class="icons">
+                            <a class="read_more" href="./key.html"><h4>Read More</h4></a>
+                        </div>
+                        </figcaption>
+                    </figure>
+                </a>
 
-                  <a href="./cctv.html">
-                    <div class="customCard">
-                      <div class="customCard__image-container">
-                        <img class="customCard__image" src="img/new/services/cctv-cover.jpg" alt="">
-                      </div>
-                  
-                      <svg class="customCard__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333" />
-                        <path class="customCard__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent" />
-                      </svg>
-                  
-                      <div class="customCard__content">
-                        <h1 class="customCard__title" style="color: #56ABD1;">CCTV & Alarm Response</h1>
-                        <p style="color: white; font-size: 13px;">Keep your premises secure with our specially designed CCTV solutions that help identify and  the criminal activity. An experienced team of professionals will ensure all suspicious activities are handled efficiently with our bespoke CCTV solutions.
+                <a href="./cctv.html">
+                    <figure class="teamuk">
+                        <img src="img/new/services/cctv.webp" alt="Patrol Security" />
+                        <figcaption>
+                        <h2 style="text-align: center; font-weight: 600; font-size: 22px;">CCTV & Alarm Response</h2>
+                        <!-- <h6 style="text-align: center; margin-bottom: 30px; color: #2791c2; font-weight: bold;">CEO - Secure Nest</h6> -->
+                        <p>Keep your premises secure with our specially designed CCTV solutions that help identify and  the criminal activity. An experienced team of professionals will ensure all suspicious activities are handled efficiently with our bespoke CCTV solutions.
 
                             Our expert security technicians can carry out a full assessment of your site to establish the best installation and CCTV monitoring strategy, using the very latest and innovative technology, for you to safeguard your site, assets, and people against crime. </p>
-                      </div>
-                    </div>
-                  </a>  
+                        <div class="icons">
+                            <a class="read_more" href="./cctv.html"><h4>Read More</h4></a>
+                        </div>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </div>
 
@@ -357,7 +353,7 @@
     <!-- Services Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer set-bg" data-setbg="img/new/footer.jpg">
+    <footer class="footer set-bg" data-setbg="img/new/ft.webp">
         <div class="container">
             <div class="footer__top">
                 <div class="row">

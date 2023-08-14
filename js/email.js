@@ -35,7 +35,7 @@ function SendMail()
             });
         } 
         else {
-                emailjs.send('service_q9p7zlm','template_knmsimg',params).then(function (res){
+                emailjs.send('service_rj7pfls','template_knmsimg',params).then(function (res){
                     Swal.fire({
                         icon: 'success',
                         title: 'Sent Successfully!',
